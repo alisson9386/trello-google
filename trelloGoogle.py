@@ -19,11 +19,13 @@ client = TrelloClient(
 )
 
 all_boards = client.list_boards()
+
+#Necessário debugar para ver qual quadro quer pegar
 my_board = all_boards[3]
 all_lists = my_board.list_lists()
 
 #Separa as listas
-doc_list = all_lists[0]
+#Necessário debugar para ver qual listas quer pegar
 backlog_list = all_lists[1]
 desenv_list = all_lists[3]
 homolog_list = all_lists[5]
